@@ -1,0 +1,111 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    background-color: hsl(159, 100%, 30%);
+
+}
+
+.container {
+
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3, 75px);
+    border: 5px solid hsl(159, 100%, 90%);
+    border-radius: 20px;
+    grid-template-areas:
+        "items-1 items-2 items-2"
+        "items-3 items-3 items-4"
+        "items-5 items-6 items-7"
+    ;   
+    padding: 10px;
+    box-shadow: 0px 20px 25px 15px rgba(0, 0, 0, 0.05),
+        0px 40px 30px 15px rgba(0, 0, 0, 0.1);
+
+}
+
+.container div {
+    /*     width: 130px;
+    height: 130px; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    color: white;
+    margin: 4px;
+    /*     display: grid;
+    justify-items: end;
+    align-items: end; */
+    border-radius: 15px;
+}
+
+.items-1 {
+    grid-area: items-1;
+}
+
+.items-2 {
+    grid-area: items-2;
+}
+
+.items-3 {
+    grid-area: items-3;
+}
+
+.items-4 {
+    grid-area: items-4;
+}
+
+.items-5 {
+    grid-area: items-5;
+}
+
+.items-6 {
+    grid-area: items-6;
+}
+
+.items-7 {
+    grid-area: items-7;
+}
+
+.items-1,
+.items-4 {
+    background-color: hsl(159, 100%, 74%);
+}
+
+.items-1 p,
+.items-4 p {
+    background-color: hsl(159, 100%, 40%);
+}
+
+.items-2,
+.items-5 {
+    background-color: hsl(159, 100%, 64%);
+}
+
+.items-2 p,
+.items-5 p {
+    background-color: hsl(159, 100%, 34%);
+}
+
+.items-3,
+.items-6,
+.items-7 {
+    background-color: hsl(159, 100%, 54%);
+}
+
+.items-3 p,
+.items-6 p,
+.items-7 p {
+    background-color: hsl(159, 100%, 24%);
+}
+
+p {
+    margin: 0;
+    width: 20px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 0 10px 0;
+}
